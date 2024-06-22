@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/4573/4573998.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+</head>
+<body>
+    <nav id="home" class="animate__animated animate__fadeInDown">
+        <img src="./images/portfoliologo.png" alt="">
+        <div class="nav-menu">
+            <a href="#home" onclick="smoothScroll(event)">Home</a>
+            <a href="#about" onclick="smoothScroll(event)">About</a>
+            <a href="#skills" onclick="smoothScroll(event)">Skills</a>
+            <a href="#experience" onclick="smoothScroll(event)">Experiences</a>
+            <a href="">Portfolio</a>
+            <a href="#contact" onclick="smoothScroll(event)">Contact</a>
+        </div>
+        <p onclick="homeMenu()" class="menu-ic" href=""><i class="ri-menu-fill"></i></p>
+    </nav>
+
+    <!-- mobile view navbar  -->
+    <div id="nav-contents" class="nav-mobile animate__animated animate__slideInRight">
+        <div class="close">
+            <i onclick="closeMenu()" class="ri-close-fill"></i>
+        </div>
+        <div class="sub-div">
+            <a href="#home" onclick="smoothScroll(event)">Home</a>
+            <div style="width: 100%; height: 1px; background-color: white;"></div>
+            <a href ="#about" onclick="smoothScroll(event)">About</a>
+            <div style="width: 100%; height: 1px; background-color: white;"></div>
+            <a href="#skills" onclick="smoothScroll(event)">Skills</a>
+            <div style="width: 100%; height: 1px; background-color: white;"></div>
+            <a href="#experience" onclick="smoothScroll(event)">Experiences</a>
+            <div style="width: 100%; height: 1px; background-color: white;"></div>
+            <a href="#portfolio" onclick="smoothScroll(event)">Portfolio</a>
+            <div style="width: 100%; height: 1px; background-color: white;"></div>
+            <a href="#contact" onclick="smoothScroll(event)">Contact</a>
+        </div>
+    </div>
+
+    <section class="whole-home">
+        <!--Home left  -->
+        <div class="home-contents-left">
+            <!-- <a class="hello" href="">Hello I'am</a> -->
+            <h1 class="head">Hello, I'am <br> <span class="multiple-text">Chinraj CR (WEB)</span></h1>
+            <h3 class="full-stack">Full-stack Developer</h3>
+            <p><i class="fa-regular fa-envelope"></i> chinraj1438@gmail.com</p>
+            <p><i class="ri-phone-line"></i> +91 6381086064</p>
+            <p><i class="ri-map-pin-line"></i> Location</p>
+            <div class="icons">
+                <a href=""><i class="ri-map-pin-line"></i></a>
+                <a href=""><i class="ri-twitter-line"></i></a>
+                <a href=""><i class="ri-instagram-line"></i></a>
+                <a href=""><i class="ri-global-line"></i></a>
+            </div>
+        </div>
+        <!--Home left  -->
+        <div class="home-contents-right">
+            <div class="border">
+                <img class="cr7" src="./images/portfolio.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="arrow-div">
+        <i class="ri-arrow-up-double-fill"></i>
+        <a href="#home" onclick="smoothScroll(event)" class="arrow"></a>
+    </div>
+
+    <section class="whole-about" id="about">
+        <div class="img">
+            <img src="./images/about.png" alt="">
+        </div>
+        <div class="about-side">
+           <h1>About me</h1>
+           <p>Hello, I’m a chinraj, web-developer . I have good experience in web site design & Backend Development. Also I am good at</p>
+           <div class="skils-div">
+                <button>Html</button>
+                <button>Css</button>
+                <button class="js">Js</button>
+                <button>Python</button>
+                <button>Django</button>
+                <button>Data Base</button>
+                <button>Git</button>
+           </div>
+           <button onclick="downloadResume()" class="dwld-cv">Download-CV <i class="fa-solid fa-download"></i></button>
+           <div id="loadingOverlay" class="loading-overlay">
+            <div class="loading-message"><p>Downloading Resume... Please wait...</p></div>
+        </div>
+        </div>
+    </section>
+
+    <section id="skills" class="whole-do">
+        <h1 class="header">What I Do</h1>
+        <div class="what-i-do">
+            <div class="collections">
+                <i class="ri-braces-line"></i>
+                <h2>Back-end Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae architecto cum molestias vero aperiam. Doloremque voluptas vel ad porro amet deleniti error quisquam et? Vel!</p>
+            </div>
+            <div class="collections">
+                <i class="ri-focus-2-line"></i>
+                <h2>Trainer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae architecto cum molestias vero aperiam. Doloremque voluptas vel ad porro amet deleniti error quisquam et? Vel!</p>
+            </div>
+            <div class="collections">
+                <!-- <p>{<span>}</span></p> -->
+                <i class="ri-code-s-slash-fill"></i>
+                <h2>Frount-end Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae architecto cum molestias vero aperiam. Doloremque voluptas vel ad porro amet deleniti error quisquam et? Vel!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skill-section">
+        <div class="whole-skills">
+            <div class="tech-skills">
+                <h1 class="header">Technical Skills</h1>
+
+                <div class="skill-collections">
+                    <div class="skill">
+                        <p>Html & Css</p>
+                        <p>95%</p>
+                    </div>
+                    <div class="skill-bor">
+                        <div class="skill-shade">
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-collections">
+                    <div class="skill">
+                        <p>Java Script</p>
+                        <p>70%</p>
+                    </div>
+                    <div class="skill-bor">
+                        <div class="skill-shade2">
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-collections">
+                    <div class="skill">
+                        <p>Python</p>
+                        <p>85%</p>
+                    </div>
+                    <div class="skill-bor">
+                        <div class="skill-shade3">
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-collections">
+                    <div class="skill">
+                        <p>Django</p>
+                        <p>90%</p>
+                    </div>
+                    <div class="skill-bor">
+                        <div class="skill-shade4">
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-collections">
+                    <div class="skill">
+                        <p>React Js</p>
+                        <p>90%</p>
+                    </div>
+                    <div class="skill-bor">
+                        <div class="skill-shade4">
+    
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="prof-skills">
+                <h1 class="header">Professional Skills</h1>
+                <div class="skill-parent">
+                    <div class="skills00">
+                        <div class="skill-1">
+                            <p>90%</p>
+                        </div>
+                        <p>Communication</p>
+                    </div>
+                    <div class="skills00">
+                        <div class="skill-1">
+                            <p>90%</p>
+                        </div>
+                        <p>Communication</p>
+                    </div>
+                    <div class="skills00">
+                        <div class="skill-1">
+                            <p>90%</p>
+                        </div>
+                        <p>Communication</p>
+                    </div>
+                    <div class="skills00">
+                        <div class="skill-1">
+                            <p>90%</p>
+                        </div>
+                        <p>Communication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="experience" class="education-parent">
+            <div class="head-sec">
+                <h1>Education & Work Experience</h1>
+            </div>
+            <div class="aligns">
+                <div class="grid">
+                    <fieldset class="col-1">
+                        <legend class="legend">2020 - 2023</legend>
+                        <h1>Nazareth Margoschis College <i class="ri-graduation-cap-line"></i></h1>
+                        <h4>Bachelor of Computer Science</h4>
+                        <p>I graduated with a Bachelor's degree in Computer Science from Nazareth Margoschis College in 2023.My studies provided a solid foundation in programming, data structures and algorithms.</p>
+                    </fieldset>
+                    <fieldset class="col-1">
+                        <legend class="legend">2019 - 2020</legend>
+                        <h1>Higher Secondary Education <i class="ri-school-line"></i></h1>
+                        <h4>S.S.Hindu Nadar Higher Secondary School </h4>
+                        <p>Completed higher secondary education with a specialization in the Bio-Maths group</p>
+                    </fieldset>
+                    <div class="col-1">
+                        <h1><span class="un">Manonmaniyam Sundharanar</span> University</h1>
+                        <h5>2020 - 2023</h5>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                    </div>
+                    <div class="col-1">
+                        <h1><span class="un">Manonmaniyam Sundharanar</span> University</h1>
+                        <h5>2020 - 2023</h5>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                    </div>
+                    <div class="col-1">
+                        <h1><span class="un">Manonmaniyam Sundharanar</span> University</h1>
+                        <h5>2020 - 2023</h5>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                    </div>
+                    <div class="col-1">
+                        <h1><span class="un">Manonmaniyam Sundharanar</span> University</h1>
+                        <h5>2020 - 2023</h5>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="sec-contact">
+        <div class="header-parent">
+            <h1 class="header">Contact</h1>
+        </div>
+        <div class="contact-parent">
+            <div class="collection">
+                <div class="bor">
+                    <i class="fa-solid fa-location-arrow"></i>
+                </div>
+                <h3>Address</h3>
+                <p>190/175 Tenkasi Main Road</p>
+                <p>Rajapalayam-626121</p>
+            </div>
+            <div class="collection">
+                <div class="bor">
+                    <i class="ri-mail-check-line"></i>
+                </div>
+                <h3>Email</h3>
+                <p>chinraj1438@gmail.com</p>
+                <p>Example@gmail.com</p>
+            </div>
+            <div class="collection">
+                <div class="bor">
+                    <i class="ri-phone-line"></i>
+                </div>
+                <h3>Phone</h3>
+                <p>+91 6381086064</p>
+            </div>
+        </div>
+    </section>
+    <div class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31485.13261776635!2d77.53469778602934!3d9.452793621133665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06e9d3a85aca8f%3A0x552789e33f3b0b11!2sRajapalayam%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1713940995141!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer">
+        <p> All Right Reserved Chinraj@2024</p>
+        <div class="f-icons">
+            <i class="ri-global-line"></i>
+            <i class="ri-instagram-line"></i>
+            <i class="ri-facebook-circle-line"></i>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
+
+
+
