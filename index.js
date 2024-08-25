@@ -8,7 +8,7 @@ function closeMenu() {
 }
 
 var typed = new Typed(".multiple-text", {
-    strings: ["Chinraj CR", "Web Developer"],
+    strings: ["Chinraj P", "Python Developer"],
     typeSpeed: 125,
     backSpeed: 150,
     backDelay: 1000,
@@ -18,7 +18,7 @@ function downloadResume() {
     const loadingOverlay = document.getElementById('loadingOverlay');
     loadingOverlay.style.display = 'flex';
     setTimeout(function() {
-        const resumeUrl = './Assets/new_resume.pdf';
+        const resumeUrl = './Assets/cv-chinraj.pdf';
         const downloadLink = document.createElement("a");
         downloadLink.href = resumeUrl;
         downloadLink.download = 'Resume.pdf';
@@ -52,3 +52,6 @@ function smoothScroll(event) {
     };
     requestAnimationFrame(animation);
 }
+
+
+

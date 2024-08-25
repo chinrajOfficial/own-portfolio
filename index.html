@@ -13,7 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script> 
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 </head>
 <body>
     <nav id="home" class="animate__animated animate__fadeInDown">
@@ -53,7 +55,7 @@
         <!--Home left  -->
         <div class="home-contents-left">
             <!-- <a class="hello" href="">Hello I'am</a> -->
-            <h1 class="head">Hello, I'am <br> <span class="multiple-text">Chinraj CR (WEB)</span></h1>
+            <h1 class="head">Hello, I'am <br> <span class="multiple-text">Chinraj</span></h1>
             <h3 class="full-stack">Full-stack Developer</h3>
             <p><i class="fa-regular fa-envelope"></i> chinraj1438@gmail.com</p>
             <p><i class="ri-phone-line"></i> +91 6381086064</p>
@@ -72,7 +74,7 @@
             </div>
         </div>
     </section>
-
+    
     <div class="arrow-div">
         <i class="ri-arrow-up-double-fill"></i>
         <a href="#home" onclick="smoothScroll(event)" class="arrow"></a>
@@ -89,9 +91,10 @@
                 <button>Html</button>
                 <button>Css</button>
                 <button class="js">Js</button>
+                <button class="js">React</button>
                 <button>Python</button>
                 <button>Django</button>
-                <button>Data Base</button>
+                <button>Posgresql</button>
                 <button>Git</button>
            </div>
            <button onclick="downloadResume()" class="dwld-cv">Download-CV <i class="fa-solid fa-download"></i></button>
@@ -105,21 +108,21 @@
         <h1 class="header">What I Do</h1>
         <div class="what-i-do">
             <div class="collections">
-                <i class="ri-braces-line"></i>
-                <h2>Back-end Development</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae architecto cum molestias vero aperiam. Doloremque voluptas vel ad porro amet deleniti error quisquam et? Vel!</p>
-            </div>
-            <div class="collections">
                 <i class="ri-focus-2-line"></i>
                 <h2>Trainer</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae architecto cum molestias vero aperiam. Doloremque voluptas vel ad porro amet deleniti error quisquam et? Vel!</p>
+                <p>I train individuals in HTML, CSS, and Python Django, helping them build solid web development skills. My sessions cover everything from the basics to advanced techniques, ensuring students gain the confidence to tackle real-world projects.</p>
             </div>
             <div class="collections">
                 <!-- <p>{<span>}</span></p> -->
                 <i class="ri-code-s-slash-fill"></i>
-                <h2>Frount-end Development</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae architecto cum molestias vero aperiam. Doloremque voluptas vel ad porro amet deleniti error quisquam et? Vel!</p>
-            </div>
+                <h2>Front-end Development</h2>
+                <p>I build responsive and user-friendly websites that work well on all devices. I focus on clean design and efficient code to create web applications that look good and function smoothly.</p>
+            </div>      
+            <div class="collections">
+                <i class="ri-braces-line"></i>
+                <h2>Back-end Development</h2>
+                <p>I specialize in building robust and scalable back-end systems using Django and the Django REST Framework. My work focuses on creating secure APIs, managing databases, and ensuring smooth server-side operations to support dynamic web applications.</p>
+            </div>      
         </div>
     </section>
 
@@ -152,6 +155,17 @@
                 </div>
                 <div class="skill-collections">
                     <div class="skill">
+                        <p>React Js</p>
+                        <p>90%</p>
+                    </div>
+                    <div class="skill-bor">
+                        <div class="skill-shade4">
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-collections">
+                    <div class="skill">
                         <p>Python</p>
                         <p>85%</p>
                     </div>
@@ -172,17 +186,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="skill-collections">
-                    <div class="skill">
-                        <p>React Js</p>
-                        <p>90%</p>
-                    </div>
-                    <div class="skill-bor">
-                        <div class="skill-shade4">
-    
-                        </div>
-                    </div>
-                </div>
+                
 
             </div>
             <div class="prof-skills">
@@ -216,6 +220,16 @@
             </div>
         </div>
     </section>
+    <section class="certificate-sec">
+        <!-- <details> -->
+            <h1>Certifications</h1>
+            <img src="./images/FullStack.png" alt="">
+        <!-- </details> -->
+        <!-- <details>
+            <summary>Click to view content</summary>
+            <p>This is the hidden content that appears when the summary is clicked. You can include any HTML here, like images, text, or other elements.</p>
+        </details> -->
+    </section>
     <section>
         <div id="experience" class="education-parent">
             <div class="head-sec">
@@ -223,38 +237,27 @@
             </div>
             <div class="aligns">
                 <div class="grid">
-                    <fieldset class="col-1">
-                        <legend class="legend">2020 - 2023</legend>
+                    <div class="col-1">
+                        <h1><span class="un">Code Purple</span> Academy <i class="fa-brands fa-python"></i></h1>
+                        <h5>Coimbatore</h5>
+                        <p>This course has equipped me with the necessary skills and knowledge to build dynamic and responsive web applications. I have gained expertise in both front-end and back-end technologies, and this is reflected in my resume.</p>
+                    </div>
+                    <div class="col-1">
+                        <h1><span class="un">Manonmaniyam Sundharanar</span> University</h1>
+                        <h5>2020 - 2023</h5>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                    </div>
+                    <div class="col-1">
                         <h1>Nazareth Margoschis College <i class="ri-graduation-cap-line"></i></h1>
                         <h4>Bachelor of Computer Science</h4>
                         <p>I graduated with a Bachelor's degree in Computer Science from Nazareth Margoschis College in 2023.My studies provided a solid foundation in programming, data structures and algorithms.</p>
-                    </fieldset>
-                    <fieldset class="col-1">
-                        <legend class="legend">2019 - 2020</legend>
-                        <h1>Higher Secondary Education <i class="ri-school-line"></i></h1>
-                        <h4>S.S.Hindu Nadar Higher Secondary School </h4>
-                        <p>Completed higher secondary education with a specialization in the Bio-Maths group</p>
-                    </fieldset>
-                    <div class="col-1">
-                        <h1><span class="un">Manonmaniyam Sundharanar</span> University</h1>
-                        <h5>2020 - 2023</h5>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
                     </div>
                     <div class="col-1">
-                        <h1><span class="un">Manonmaniyam Sundharanar</span> University</h1>
-                        <h5>2020 - 2023</h5>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                        <h2>Higher Secondary Education</h2>
+                        <h3>S.S. Hindu Nadar Higher Secondary School</h3>
+                        <p>This academic foundation provided me with a strong understanding of both biological sciences and mathematical principles, which have contributed to my analytical and problem-solving skills in my professional journey.</p>
                     </div>
-                    <div class="col-1">
-                        <h1><span class="un">Manonmaniyam Sundharanar</span> University</h1>
-                        <h5>2020 - 2023</h5>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
-                    </div>
-                    <div class="col-1">
-                        <h1><span class="un">Manonmaniyam Sundharanar</span> University</h1>
-                        <h5>2020 - 2023</h5>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -278,7 +281,7 @@
                 </div>
                 <h3>Email</h3>
                 <p>chinraj1438@gmail.com</p>
-                <p>Example@gmail.com</p>
+                <p>chinraj@codepurple.in</p>
             </div>
             <div class="collection">
                 <div class="bor">
@@ -295,9 +298,9 @@
     <div class="footer">
         <p> All Right Reserved Chinraj@2024</p>
         <div class="f-icons">
-            <i class="ri-global-line"></i>
-            <i class="ri-instagram-line"></i>
-            <i class="ri-facebook-circle-line"></i>
+            <a href=""><i class="ri-global-line"></i></a>
+            <a target="_blank" href="https://www.instagram.com/7s__.suz._luvv__/"><i class="ri-instagram-line"></i></a>
+            <a href=""><i class="ri-facebook-circle-line"></i></a>
         </div>
     </div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
