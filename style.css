@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    font-family: "Lato", sans-serif;
+    /* font-family: "Lato", sans-serif; */
+    font-family: "Poppins", sans-serif;
     height: 100%;
     width: 100%;
 }
@@ -95,6 +96,10 @@ nav a{
     justify-content: center;
     animation: slidein 2s forwards;
 }
+.home-contents-left p{
+    text-align: start;
+    font-family: "Poppins", sans-serif;
+}
 @keyframes slidein {
     from {
         opacity: 0;
@@ -133,15 +138,20 @@ nav a{
     font-weight: 700;
 }
 .head{
-    font-size: 55px;
-    font-weight: 900;
-    color: #000000;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #000000ca;
+    
 }
 .full-stack{
     font-size: 30px;
 }
 .multiple-text{
     color: #ca2112ed;
+    font-weight: 500;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
     
 }
 .icons{
@@ -189,9 +199,10 @@ nav a{
 }
 .about-side h1{
     font-size: 50px;
+    font-weight: 600;
 }
 .about-side p{
-    font-weight: 600;
+    /* font-weight: 600; */
     line-height: 30px;
     font-size: 20px;
 }
@@ -262,12 +273,20 @@ nav a{
     
 }
 .collections h2{
-    font-size: 25px;
+    font-size: 22px;
     color: #000000;
+    font-weight: 600;
 }
 .header{
     text-align: center;
     font-size: 40px;
+    font-weight: 600;
+}
+.animated-words{
+    /* font-size: 32px; */
+    font-weight: 500;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
 }
 .whole-skills{
     width: 80%;
@@ -330,8 +349,8 @@ nav a{
 
 }
 .skill p{
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 18px;
+    font-weight: 500;
 }
 .prof-skills{
     width: 45%;
@@ -436,20 +455,24 @@ details{
 }
 .col-1{
     width: 100%;
-    height: 200px;
+    height: 280px;
     border: 2px solid grey;
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 20px;
     justify-content: center;
+    border-radius: 20px;
 }
 .col-1:hover{
     border:2px solid #40e609;
 }
 .col-1 h5{
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
+}
+.col-1 h1{
+    font-weight: 600;
 }
 .sec-contact{
     width: 100%;

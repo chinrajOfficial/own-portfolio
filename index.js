@@ -8,9 +8,9 @@ function closeMenu() {
 }
 
 var typed = new Typed(".multiple-text", {
-    strings: ["Chinraj P", "Python Developer"],
+    strings: ["Fullstack Developer", "Python Developer", "Freelancer", "Designer", "Service Provider"],
     typeSpeed: 125,
-    backSpeed: 150,
+    backSpeed: 10,
     backDelay: 1000,
     loop: true
 })
