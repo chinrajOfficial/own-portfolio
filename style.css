@@ -888,6 +888,7 @@ details{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        background-color: gray;
     }
     .col-1 h1{
         font-size: 20px;
