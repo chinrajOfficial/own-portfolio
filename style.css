@@ -858,7 +858,7 @@ details{
     }
     .collections{
         width: 100%;
-        height: 350px;
+        height: 400px;
         padding: 10px 30px;
     }
     .whole-skills{
@@ -888,7 +888,6 @@ details{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: gray;
     }
     .col-1 h1{
         font-size: 20px;
