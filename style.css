@@ -762,6 +762,10 @@ details{
         right:4.5%;
         bottom: 6.2%;
     }
+   .multiple-text{
+    font-size: 16px;
+    font-weight: 600;
+   }
     .certificate-sec img{
         width: 100%;
         height: 60vh;
